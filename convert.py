@@ -22,7 +22,7 @@ def convert_csv_to_parquet(csv_path, parquet_path):
     try:
         # Load CSV file
         df = pd.read_csv(csv_path)
-        logging.info("CSV file successfully loaded.")
+        logging.info("CSV file successfully loaded!.")
 
         # Convert DataFrame to Apache Arrow Table
         table = pa.Table.from_pandas(df)
